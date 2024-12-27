@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.LoginPage_container {
+  width: 50%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Login_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.Login_email,.mb-6 {
+  margin-bottom: 20px;
+}
+
+.Input-email,.input-password {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Login_button {
+  width: 50%;
+  height: 40px;
+  background-color: #6d7df7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login_button:hover {
+  background-color: #000000;
+  transition: 0.3s linear;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+ .LoginPage_container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+ .LoginPage_container {
+    width: 90%;
+  }
+ .Login_input {
+    flex-direction: column;
+  }
+ .Login_email,.mb-6 {
+    margin-bottom: 10px;
+  }
+ .Input-email,.input-password {
+    height: 30px;
+  }
+ .Login_button {
+    height: 30px;
+  }
+}
+
+/* home page .....................................................................*/
+
+.Menu_bar {
+  background-color: #4b4b4b;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Menu_items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Menu_items li {
+  margin-right: 20px;
+}
+
+.Menu_items a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.Menu_items a:hover {
+  color: #ccc;
+}
+
+.LogOut-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.LogOut-button:hover {
+  background-color: #ccc;
+}
+
+/* Responsive Styles */
+
+/* Medium screens (768px and up) */
+
+@media (min-width: 768px) {
+  .Menu_bar {
+    flex-direction: row;
+  }
+  .Menu_items {
+    flex: 1;
+  }
+  .LogOut-button {
+    margin-left: 20px;
+  }
+}
+
+/* Large screens (1024px and up) */
+
+@media (min-width: 1024px) {
+  .Menu_bar {
+    padding: 2rem;
+  }
+  .Menu_items li {
+    margin-right: 30px;
+  }
+  .LogOut-button {
+    padding: 15px 30px;
+  }
+}
+
+/* Outlet Styles */
+
+.Outlet-container {
+  padding: 2rem;
+}
+
+/* display page........................................................................ */
+
+
+.DisplayBar {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+
+.displayTbale {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer {
+  background-color: #f0f0f0;
+}
+
+.tableHeading {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableHeading2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableItems {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableContainerbox {
+  background-color: #fff;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .DisplayBar {
+    margin: 20px;
+    padding: 10px;
+  }
+  .displayTbale {
+    font-size: 14px;
+  }
+  .tableHeading {
+    padding: 5px;
+  }
+  .tableItems {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .DisplayBar {
+    margin: 10px;
+    padding: 5px;
+  }
+  .displayTbale {
+    font-size: 12px;
+  }
+  .tableHeading {
+    padding: 3px;
+  }
+  .tableItems {
+    padding: 3px;
+  }
+}
+
+/* addProduct........................................................ */
+
+.Addproduct {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Add_product_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-4,
+.mb-6 {
+  margin-bottom: 20px;
+}
+
+.product-name,
+.proprice {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add_product_Button {
+  background-color: #4b4b4b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .Addproduct {
+    max-width: 100%;
+  }
+}
+
+/* /serach page.................................................... */
+
+/* Search Form Styles */
+.Search_form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.Search_form .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Search_form h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+h1 input{
+  /* margin-left: 20%; */
+  width: 55%;
+}
+
+.Search_form .searchInput {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+
+.Search_form .searchInput:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+
+.Search_form .Search_button {
+  background-color: #4b4b4b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-left: 40%; */
+}
+
+.Search_form .Search_button:hover {
+  background-color: #272727;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .Search_form {
+    padding: 10px;
+  }
+  .Search_form .searchInput {
+    font-size: 16px;
+  }
+  .Search_form .Search_button {
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Search_form {
+    padding: 5px;
+  }
+  .Search_form .searchInput {
+    font-size: 14px;
+  }
+  .Search_form .Search_button {
+    padding: 5px 10px;
+  }
+}
